@@ -1,1 +1,210 @@
+:root {
+  --color-UNO: #273248;
+	--color-DOS: #af4f41;
+	--color-TRES: #fc7643;
+	--color-CUATRO: #ffa364;
+	--color-CINCO: #ffebd2;
+	--color-SEIS: #ffffff;
+  --color-SIETE: rgb(255, 87, 34, 15%);
+  --color-OCHO: rgb(34, 40, 49, 60%);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+}
+
+#ppal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-CINCO);
+  z-index: 1;
+}
+
+header {
+  height: 80px;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid var(--color-DOS);
+  border-radius: 10px;
+  align-items: center;
+
+  margin-top: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-right: 15px;
+  font-size: 170%;
+  font-family: "M PLUS 1 Code", monospace;
+  font-weight: bolder;
+  color: var(--color-DOS);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 98%;
+}
+
+.entrada {
+  flex-grow: 1;
+  width: 98%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nota {
+  font-size: 14px;
+  text-align: center;
+  font-family: "M PLUS 1 Code", monospace;
+  font-weight: 500;
+  color: var(--color-DOS);
+}
+
+.salida {
+  flex-grow: 1;
+  width: 98%;
+  margin-bottom: 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#txtEntrada {
+  flex-grow: 1;
+  width: 97%;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid var(--color-UNO);
+  border-radius: 12px;
+  background-color: var(--color-UNO);
+  box-shadow: 0px 0px 15px var(--color-UNO);
+
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 125%;
+  font-size: 100%;
+  font-weight: 400;
+  color: var(--color-CUATRO);
+}
+
+#txtSalida {
+  flex-grow: 1;
+  width: 97%;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid var(--color-TRES);
+  border-radius: 12px;
+  background-color: var(--color-SIETE);
+  box-shadow: 0px 0px 15px var(--color-TRES);
+
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 100%;
+  font-weight: 600;
+  color: var(--color-UNO);
+}
+
+footer {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--color-DOS);
+  border-radius: 10px;
+  gap: 10px;
+
+
+  font-family: "M PLUS 1 Code", monospace;
+  font-weight: 400;
+  font-size: 80%;
+  color: var(--color-DOS);
+}
+
+span {
+  font-weight: bold;
+}
+
+#btncifrar, #btndescifrar {
+  width: 120px;
+  height: 30px;
+  font-family: "M PLUS 1 Code", monospace;
+  font-weight: 600;
+  font-size: 110%;
+  color: var(--color-CINCO);
+  background-color: var(--color-UNO);
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+#btncifrar:hover, #btndescifrar:hover {
+  box-shadow: 0px 0px 10px var(--color-UNO);
+}
+
+#btn_copiar {
+  width: 160px;
+  height: 30px;
+  font-family: "M PLUS 1 Code", monospace;
+  font-weight: 600;
+  font-size: 110%;
+  color: var(--color-UNO);
+  background-color: var(--color-TRES);
+  border: 2px solid var(--color-CUATRO);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+#btn_copiar:hover {
+  box-shadow: 0px 0px 10px var(--color-TRES);
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  header {
+    height: 80px;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .salida {
+    margin-bottom: 8px;
+  }
+
+  footer {
+    height: 45px;
+    width: 94%;
+    border-radius: 10px;
+  }
+}

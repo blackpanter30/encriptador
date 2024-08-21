@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>encriptador</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Texto</title>
+    <link rel="stylesheet" href="./estilos.css" />
+  </head>
+
+  <body id="ppal">
+    <header>
+      <h1> Encriptador de texto Alura-ONE </h1>
+    </header>
+
+    <main>
+      <section class="entrada">
+        <textarea id="txtEntrada" class="text-area" rows="5" cols="50" placeholder="Ingrese aquí su texto" autofocus></textarea>
+
+				<div>
+					<h6 class="nota">Sólo letras minúsculas ni caracteres especiales.</h6>
+				</div>
+
+				<div class="botones">
+					<button id="btncifrar" type="button" onclick="codificar();"> Codificar </button>
+					<button id="btndescifrar" type="button" onclick="descodificar();"> Descodificar </button>
+      	</div>
+      </section>
+
+      <section class="salida">
+				<textarea id="txtSalida" class="text-area" rows="5" cols="50"></textarea>
+				<div>
+					<button id="btn_copiar" type="button" onclick="copiar();">Copiar</button>
+				</div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="desarrollador">Elaborado por <span> Felipe Saldarriaga </span> 2024</p> 
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
